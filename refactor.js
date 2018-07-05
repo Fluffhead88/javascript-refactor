@@ -58,8 +58,9 @@
   // -----------------------------------------------
 
   sayHi = setTimeout(function() {
-      alert("Hello, World"), 2000);
-  }
+    alert("Hello, World")
+  }, 2000);
+
   // 3. --------------------------------------------
 
   // The code below will log the letter twice. What
@@ -142,19 +143,19 @@
 
   var color = {
     rojo: function() {
-      return: "#ff0000";
+      return "#ff0000";
     },
     blanco: function() {
-      return: "#ffffff";
+      return "#ffffff";
     },
     azul: function() {
-      return: "#0000ff";
+      return "#0000ff";
     },
     verde: function() {
-      return: "#00ff00";
+      return "#00ff00";
     },
     negro: function() {
-      return: "#000000";
+      return "#000000";
     },
   }
 
@@ -199,8 +200,10 @@
 
   // -----------------------------------------------
 
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
+  var callNTimes = function(callback, n) {
+    var range = _.range(n);
+    _.each(range, callback);
+  };
 
   // 8. --------------------------------------------
 
@@ -227,8 +230,18 @@
 
   // -----------------------------------------------
 
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
+
+
+  var increaseScore = function() {
+    score++;
+    var score = 0;
+  };
+
+  console.log(score);
+  var decreaseScore = function() {
+    score--;
+    var score = 0;
+  };
 
   // 9. --------------------------------------------
 
@@ -247,8 +260,11 @@
 
   // -----------------------------------------------
 
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
+  var addNumbers = function(numberA, numberB) {
+    return (numberA + numberB);
+  };
+
+  var twoPlusTwo = addNumbers(2, 2);
 
   // 10. -------------------------------------------
 
