@@ -230,17 +230,17 @@
 
   // -----------------------------------------------
 
+  var score;
 
-
-  var increaseScore = function() {
+  var increaseScore = function(score = 0) {
     score++;
-    var score = 0;
+
   };
 
   console.log(score);
-  var decreaseScore = function() {
+  var decreaseScore = function(score = 0) {
     score--;
-    var score = 0;
+
   };
 
   // 9. --------------------------------------------
@@ -285,8 +285,13 @@
   };
 
   // Put your answer below -------------------------
+  // amount is never set to a number and adding a number to a non number give you
+  //  a non number (NaN)
+  var speed = 0;
 
-
+  var accelerate = function(amount = 0) {
+    speed += amount;
+  };
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
